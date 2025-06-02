@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Nilai Gabungan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-900 text-gray-100 p-4 min-h-screen flex items-center justify-center">
+    <div class="max-w-lg mx-auto bg-gray-800 p-6 sm:p-10 rounded-2xl shadow-2xl w-full">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-400 mb-6 sm:mb-8 text-center tracking-wide">Perhitungan Nilai Gabungan</h1>
+
+        <div class="section mb-6 sm:mb-8 p-4 sm:p-6 bg-gray-700 rounded-xl shadow-inner">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-200 mb-4 sm:mb-5 border-b border-gray-600 pb-3">1. Nilai Rapor (Semester 1-5)</h2>
+            <div class="space-y-4 sm:space-y-6">
+                <div>
+                    <label class="block text-gray-300 text-sm sm:text-base font-medium mb-2">Bahasa Indonesia:</label>
+                    <div class="grid grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-3">
+                        <input type="number" id="indo-s1" placeholder="Smstr 1" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="indo-s2" placeholder="Smstr 2" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="indo-s3" placeholder="Smstr 3" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="indo-s4" placeholder="Smstr 4" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="indo-s5" placeholder="Smstr 5" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-300 text-sm sm:text-base font-medium mb-2">Matematika:</label>
+                    <div class="grid grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-3">
+                        <input type="number" id="mtk-s1" placeholder="Smstr 1" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="mtk-s2" placeholder="Smstr 2" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="mtk-s3" placeholder="Smstr 3" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="mtk-s4" placeholder="Smstr 4" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="mtk-s5" placeholder="Smstr 5" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-300 text-sm sm:text-base font-medium mb-2">Bahasa Inggris:</label>
+                    <div class="grid grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-3">
+                        <input type="number" id="inggris-s1" placeholder="Smstr 1" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="inggris-s2" placeholder="Smstr 2" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="inggris-s3" placeholder="Smstr 3" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="inggris-s4" placeholder="Smstr 4" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="inggris-s5" placeholder="Smstr 5" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-300 text-sm sm:text-base font-medium mb-2">IPA:</label>
+                    <div class="grid grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-3">
+                        <input type="number" id="ipa-s1" placeholder="Smstr 1" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="ipa-s2" placeholder="Smstr 2" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="ipa-s3" placeholder="Smstr 3" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="ipa-s4" placeholder="Smstr 4" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                        <input type="number" id="ipa-s5" placeholder="Smstr 5" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section mb-6 sm:mb-8 p-4 sm:p-6 bg-gray-700 rounded-xl shadow-inner">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-200 mb-4 sm:mb-5 border-b border-gray-600 pb-3">2. Nilai Asesmen Standardisasi</h2>
+            <div class="space-y-4 sm:space-y-5">
+                <div>
+                    <label for="membaca" class="block text-gray-300 text-sm sm:text-base font-medium mb-2">Literasi Membaca (skor):</label>
+                    <input type="number" id="membaca" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                </div>
+                <div>
+                    <label for="sains" class="block text-gray-300 text-sm sm:text-base font-medium mb-2">Literasi Sains (skor):</label>
+                    <input type="number" id="sains" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                </div>
+                <div>
+                    <label for="numerik" class="block text-gray-300 text-sm sm:text-base font-medium mb-2">Literasi Numerik (skor):</label>
+                    <input type="number" id="numerik" class="w-full p-2 sm:p-3 bg-gray-900 border border-gray-600 rounded-lg text-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-sm">
+                </div>
+            </div>
+        </div>
+
+        <button id="hitungButton" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-3 sm:py-4 px-4 sm:px-6 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 text-base sm:text-lg">
+            Hitung Nilai Gabungan
+        </button>
+
+        <div id="hasil" class="mt-6 sm:mt-8 text-xl sm:text-2xl font-extrabold text-center text-blue-300 p-4 sm:p-5 bg-gray-700 rounded-xl border border-blue-600 shadow-md">
+        </div>
+
+        <div id="detailPerhitungan" class="mt-6 sm:mt-8 p-4 sm:p-6 bg-gray-700 rounded-xl shadow-inner hidden">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-200 mb-4 sm:mb-5 border-b border-gray-600 pb-3">Detail Proses Perhitungan</h2>
+            <div id="prosesSteps" class="space-y-3 sm:space-y-4 text-gray-300 text-sm sm:text-base">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
